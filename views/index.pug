@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter your text here:
+       br
+       input(type="text" id="userText" name="userText")
+       br
+       br
+       button(type="submit") Submit
+    if message
+        p=message
+  h4 Example of palindromes are taco cat, noon, and  a nut for a jar of tuna.
